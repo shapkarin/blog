@@ -15,7 +15,7 @@ const RouterComponent = () => (
     </Route>
     <Route component={BlogLayout}>
       <Route path="/posts" component={Posts} />
-      <Route path="/post" component={Post} />
+      <Route path="/post/:id" component={Post} />
     </Route>
   </Router>
 )
