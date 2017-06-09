@@ -8,9 +8,9 @@ export default class Header extends Component {
     return <nav className={`navbar  ${this.props.name === 'Landing' ? 'navbar-default' : 'navbar-inverse'}`}>
       <div className="container-fluid">
         <div className="navbar-header">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to={this.props.name === 'Landing' ? '/' : '/posts'}>
             {this.props.name}
-          </a>
+          </Link>
         </div>
       </div>
     </nav>;
