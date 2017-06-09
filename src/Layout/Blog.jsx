@@ -8,7 +8,7 @@ class MainLayout extends Component {
     const { children } = this.props;
 
     return (
-      <div className="main-layout-container">
+      <div className="container-fluid">
         <Header name="Blog"/>
         <div className="container">
           {children}
