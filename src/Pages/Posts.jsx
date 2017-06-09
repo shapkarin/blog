@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link, browserHistory } from 'react-router';
 
 const itemTest = {
-  title: 'Some titile',
-  date: '10 sep - 13 sep 2017'
+  title: 'Заголовок',
+  date: '28 декабря 2017'
 };
 
 export default class App extends Component {
@@ -27,7 +27,7 @@ export default class App extends Component {
         {
           posts.map(post =>
             <div>
-              <Link to={`post/${post.id}`}>{post.title}</Link>
+              <Link to={`post/${post.id}`}>{`${post.title} #${post.id}`}</Link>
             </div>
           )
         }

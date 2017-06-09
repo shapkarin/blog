@@ -8,7 +8,9 @@ class MainLayout extends Component {
 
     return (
       <div className="main-layout-container">
-        <header style={{height: '100px', width: '100%', background: 'green'}} />
+        <header style={{height: '100px', width: '100%', background: 'green'}}>
+          БЛОГ 
+        </header>
         <div className="main-content">
           {children}
         </div>

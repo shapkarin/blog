@@ -7,7 +7,9 @@ class LandingLayout extends Component {
 
     return (
       <div className="landing-layout-container">
-        <header style={{height: '100px', width: '100%', background: 'red'}} />
+        <header style={{height: '100px', width: '100%', background: 'red'}}>
+          Лендинг
+        </header>
         <div className="main-content">
           {children}
         </div>
