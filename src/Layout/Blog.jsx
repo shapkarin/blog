@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import Header from '../Components/Header'
 
 class MainLayout extends Component {
   render() {
@@ -8,10 +9,8 @@ class MainLayout extends Component {
 
     return (
       <div className="main-layout-container">
-        <header style={{height: '100px', width: '100%', background: 'green'}}>
-          БЛОГ 
-        </header>
-        <div className="main-content">
+        <Header name="Blog"/>
+        <div className="container">
           {children}
         </div>
       </div>

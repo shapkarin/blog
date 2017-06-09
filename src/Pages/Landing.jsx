@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 
 import { Link } from 'react-router';
 
-export default class App extends Component {
+export default class LandingPage extends Component {
   render() {
-    return <div className="App">
-      <p className="App-intro">
-        <Link to="posts">Список постоa</Link><br />
-      </p>
+    return <div className="jumbotron">
+      <h1>Hello, world!</h1>
+      <p><Link to="posts" className="btn btn-primary btn-lg" role="button">Блог</Link></p>
     </div>;
   }
 }

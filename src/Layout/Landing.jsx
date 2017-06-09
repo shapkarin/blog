@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import Header from '../Components/Header'
+
 class LandingLayout extends Component {
   render() {
     const { children } = this.props;
 
     return (
-      <div className="landing-layout-container">
-        <header style={{height: '100px', width: '100%', background: 'red'}}>
-          Лендинг
-        </header>
-        <div className="main-content">
+      <div>
+        <Header name="Landing"/>
+        <div className="container">
           {children}
         </div>
       </div>

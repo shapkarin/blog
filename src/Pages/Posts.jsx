@@ -6,7 +6,7 @@ const itemTest = {
   date: '28 декабря 2017'
 };
 
-export default class App extends Component {
+export default class Posts extends Component {
 
   state = {
     posts: [
@@ -24,14 +24,15 @@ export default class App extends Component {
     return <div className="App">
         List of POSTS
         <button onClick={browserHistory.goBack}>Назад</button>  <br />
-        {
-          posts.map(post =>
-            <div>
-              <Link to={`post/${post.id}`}>{`${post.title} #${post.id}`}</Link>
-            </div>
-          )
-        }
-
+        <ul className="list-group">
+          {
+            posts.map(post =>
+              <li className="list-group-item">
+                <Link to={`post/${post.id}`}>{`${post.title} #${post.id}`}</Link>
+              </li>
+            )
+          }
+        </ul>
       </div>
   }
 }
