@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 
 export default class App extends Component {
+
   state = {
     id: 1,
     title: 'Заголовок поста',
