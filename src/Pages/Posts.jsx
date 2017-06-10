@@ -30,7 +30,7 @@ export default class Posts extends Component {
         <ul className="list-group">
           {
             posts.map(post =>
-              <li className="list-group-item">
+              <li className="list-group-item" key={post.id}>
                 <Link to={`post/${post.id}`}>{`${post.title} #${post.id}`}</Link>
               </li>
             )
