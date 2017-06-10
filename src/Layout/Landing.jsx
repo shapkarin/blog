@@ -8,7 +8,7 @@ class LandingLayout extends Component {
     const { children } = this.props;
 
     return (
-      <div className="container-fluid">
+      <div>
         <Header name="Landing"/>
         <div className="container">
           {children}

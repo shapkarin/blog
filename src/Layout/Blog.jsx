@@ -16,7 +16,7 @@ class MainLayout extends Component {
     const { children, location } = this.props;
 
     return (
-      <div className="container-fluid">
+      <div>
         <Header name="Blog"/>
         <div className="container">
           <ReactCSSTransitionGroup
