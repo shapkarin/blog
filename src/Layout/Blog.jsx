@@ -13,7 +13,7 @@ const transitionEnterTimeout = 2 * transitionDuration;
 
 class MainLayout extends Component {
   render() {
-    const { children, location } = this.props;
+    let { children, location } = this.props;
 
     return (
       <div>

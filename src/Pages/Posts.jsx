@@ -21,7 +21,7 @@ export default class Posts extends Component {
   }
 
   render() {
-    const { posts } = this.state;
+    let { posts } = this.state;
 
     return <div className="group">
         <div className="page-header">

@@ -5,7 +5,7 @@ import Header from '../Components/Header'
 
 class LandingLayout extends Component {
   render() {
-    const { children } = this.props;
+    let { children } = this.props;
 
     return (
       <div>
