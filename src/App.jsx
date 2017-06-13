@@ -3,10 +3,8 @@ import Router from './Router';
 
 import './Layout/Style/animation.css';
 
-class App extends Component {
-  render() {
+const App = () => {
     return <Router />;
-  }
 }
 
 export default App;
