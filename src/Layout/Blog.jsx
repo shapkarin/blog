@@ -4,12 +4,8 @@ import ReactCSSTransitionGroup from 'react/lib/ReactCSSTransitionGroup';
 
 import Header from '../Components/Header'
 
-import './Style/animation.css';
-
 const transitionDuration = 300;
 const transitionEnterTimeout = 2 * transitionDuration;
-
-
 
 class MainLayout extends Component {
   render() {
