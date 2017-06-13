@@ -18,7 +18,7 @@ export default class Post extends Component {
   }
 
   render() {
-    const post = this.state;
+    let post = this.state;
 
     return <div className="App">
         <div className="page-header">
