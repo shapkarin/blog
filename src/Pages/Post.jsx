@@ -1,21 +1,11 @@
 import React, { Component } from 'react';
 import { browserHistory } from 'react-router';
 
+import Data from './../Data/Posts.js';
+
 export default class Post extends Component {
 
-  state = {
-    id: 1,
-    title: 'Заголовок поста',
-    body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Maecenas sagittis, ante in fermentum suscipit, urna urna cursus
-            dolor, id tristique ligula lectus finibus tortor. Quisque fringilla
-            imperdiet porttitor. Praesent elementum scelerisque neque.
-            Sed sagittis interdum odio. Phasellus convallis mi sapien,
-            sed ultrices leo vehicula vitae. Phasellus sodales dui sit amet fermentum venenatis.
-            Duis dignissim erat id vulputate molestie. Etiam sit amet pretium magna, ac posuere metus.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    `
-  }
+  state = Data[0];
 
   render() {
     let post = this.state;

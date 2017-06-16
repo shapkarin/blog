@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link, browserHistory } from 'react-router';
 
+import Data from './../Data/Posts.js';
+
 import './Style/test.css';
 
 const itemTest = {
@@ -11,13 +13,7 @@ const itemTest = {
 export default class Posts extends Component {
 
   state = {
-    posts: [
-      { id: 0, ...itemTest },
-      { id: 1, ...itemTest },
-      { id: 2, ...itemTest },
-      { id: 3, ...itemTest },
-      { id: 4, ...itemTest }
-    ]
+    posts: Data
   }
 
   render() {
