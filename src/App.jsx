@@ -3,8 +3,6 @@ import Router from './Router';
 
 import './Layout/Style/animation.css';
 
-const App = () => {
+export default () => {
     return <Router />;
 }
-
-export default App;

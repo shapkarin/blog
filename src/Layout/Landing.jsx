@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Header from '../Components/Header'
 
-class LandingLayout extends Component {
+export default class LandingLayout extends Component {
   render() {
     let { children } = this.props;
 
@@ -21,5 +21,3 @@ class LandingLayout extends Component {
 LandingLayout.propTypes = {
   children: PropTypes.object.isRequired,
 };
-
-export default LandingLayout;

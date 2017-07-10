@@ -7,7 +7,7 @@ import Header from '../Components/Header'
 const transitionDuration = 300;
 const transitionEnterTimeout = 2 * transitionDuration;
 
-class MainLayout extends Component {
+export default class MainLayout extends Component {
   render() {
     let { children, location } = this.props;
 
@@ -34,5 +34,3 @@ class MainLayout extends Component {
 MainLayout.propTypes = {
   children: PropTypes.object.isRequired
 };
-
-export default MainLayout;
